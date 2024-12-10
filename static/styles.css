@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Gagalin';
+    src: url('/static/fonts/Gagalin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Стилі для логотипа */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Центрування аудіо-плеєра */
+.custom-audio-player {
+    display: block;
+    margin: 20px auto;
+    width: 80%; /* Ширина плеєра */
+    max-width: 500px; /* Максимальна ширина */
+    border: 2px solid #4CAF50; /* Рамка плеєра */
+    border-radius: 10px; /* Закруглені краї */
+    background-color: #f9f9f9; /* Колір фону плеєра */
+}
+
+/* Стиль секції, яка містить аудіо */
+section {
+    text-align: center; /* Центрування тексту */
+    padding: 20px;
+    background-color: #e0f7fa; /* Фон секції */
+    border: 1px solid #00acc1; /* Рамка секції */
+    border-radius: 10px;
+}
+
+.weather-informer, .time-informer {
+    text-align: center; /* Центруємо секцію */
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Фон секції */
+    width: fit-content; /* Автоматична підгонка ширини */
+}
+iframe {
+    border: none; /* Видаляємо рамку інформера */
+}
+
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.travelers-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#travelers {
+    width: 80%;
+    margin: 10px 0;
+}
+
+#travelers-value {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Стилі для контейнера і Tooltip */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Показувати tooltip при наведенні */
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.travelers-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#travelers {
+    width: 80%;
+    margin: 10px 0;
+}
+
+#travelers-value {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #fafafa;
+    font-size: 14px;
+}
+
+
+.video-section {
+    text-align: center; /* Центрує текст та інші блоки всередині секції */
+    margin: 20px 0; /* Відступи зверху та знизу */
+}
+
+.video-section iframe {
+    border: 3px solid #007BFF; /* Додає рамку до відео */
+    border-radius: 10px; /* Заокруглені кути */
+    max-width: 100%; /* Адаптивний розмір для різних екранів */
+    height: auto; /* Пропорційне масштабування */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Тінь для краси */
+}
+
+
+/* Стилі для карти */
+#map {
+    width: 80%; /* Ширина контейнера карти */
+    height: 400px; /* Висота карти */
+    margin: 20px auto;
+    border: 2px solid #34495e; /* Опціонально: рамка */
+    border-radius: 8px; /* Опціонально: закруглені кути */
+}
+
+.logo {
+    width: 60px; /* Розмір логотипа */
+    height: auto; /* Автоматична пропорція */
+    margin-right: 15px; /* Відступ між логотипом і текстом */
+}
+
+h1 {
+    font-family: 'Gagalin', sans-serif;
+    color: #2c3e50;
+    text-align: center;
+    margin: 0;
+}
+
+/* Стилі для заголовків */
+h1, h2, h3 {
+    font-family: 'Gagalin', sans-serif;
+    color: #2c3e50; /* Колір заголовків */
+    text-align: center; /* Центрування тексту */
+}
+
+/* Стилі для пунктів меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #34495e; /* Фон меню */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-family: 'Gagalin', sans-serif;
+    text-decoration: none;
+    color: #ecf0f1; /* Колір тексту */
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e74c3c; /* Зміна кольору при наведенні */
+}
+
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #1abc9c; /* Фон заголовка */
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #34495e; /* Фон футера */
+    color: #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Стилі для розділу "Розклад маршрутів" */
+.schedule table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Gagalin', sans-serif;
+}
+
+.schedule table th,
+.schedule table td {
+    border: 1px solid #34495e;
+    padding: 10px;
+}
+
+.schedule table th {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+.schedule table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+.schedule table tr:nth-child(odd) {
+    background-color: #bdc3c7;
+}
+
+/* Стилі для розділу "Поради для туристів" */
+.tips ul {
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Gagalin', sans-serif;
+    line-height: 1.6;
+    padding: 0;
+}
+
+.tips ul li {
+    list-style-type: disc;
+    margin: 5px 0;
+}
